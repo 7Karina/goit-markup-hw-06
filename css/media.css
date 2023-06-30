@@ -23,14 +23,14 @@
         line-height: 1.5;
         letter-spacing: 0.32px;
     }
+    .footer-input{
+        width: 398px;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-        /* width: 552px; */
-        margin: 0 auto;
-        padding: 0;
     }
 
     .benefits-list {
@@ -50,17 +50,21 @@
     }
     .container-team{
         max-width: 584px;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .team{
         padding-top: 96px;
         padding-bottom: 96px; 
-        max-width: 584px;
     }
     .team-list{
         flex-wrap: wrap;
         flex-direction: row;
         gap: 64px 24px;
+    }
+    .container-fifth{
+        max-width: 584px;
     }
     .fifth-icon-list{
         gap: 72px 24px;
@@ -68,6 +72,33 @@
     }
     .fifth-icon{
         width: calc((100% - 48px) / 3)
+    }
+    .footer{
+        padding: 0;
+    }
+    .footer-container{
+        gap: 72px 24px;
+    }
+
+    .footer-box,
+    .footer-contacts,
+    .footer-bottom{
+        align-items: flex-start;
+    }
+    .footer-item-text{
+        text-align: left;
+        margin: 0;
+    }
+    .footer-bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-form{
+        flex-direction: row;
+    }
+    .footer-input{
+        width: 264px;
     }
 }
 
@@ -106,12 +137,11 @@
         letter-spacing: 0.32px;
     }
     .container-team{
-        /* max-width: 584px; */
+        max-width: 1158px;
     }
     .team {
         padding-top: 120px;
         padding-bottom: 120px;
-        max-width: 584px;
         }
     .team-list{
         display: flex;
@@ -125,10 +155,21 @@
         padding-top: 120px;
         padding-bottom: 120px;
     }
+    .container-fifth{
+        min-width: 1158px;
+    }
     .fifth-icon-list{
         gap: 72px 24px;
     }
     .fifth-icon{
         width: calc((100% - 120px) / 6);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px){.team>.container,
+.container-fifth>.container, .footer-container>.container {
+    width: 584px;
+    margin: 0 auto;
+    padding: 0;
     }
 }
