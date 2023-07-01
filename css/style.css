@@ -196,7 +196,8 @@ ul{
     background-position: center;
     background-size: cover;
     background-color: #2E2F42;
-    padding: 188px 0;
+    /* padding: 188px 0; */
+    padding: 112px 0;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -207,15 +208,21 @@ ul{
 
 .hero-title {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    /* font-size: 56px; */
+    font-size: 36px;
+    /* line-height: 1.07; */
+    line-height: 1.11;
     text-align: center;
+    /* letter-spacing: 0.02em; */
     letter-spacing: 0.02em;
     color: var(--main-text-color);
     text-align: center;
     margin: 0 auto;
-    max-width: 496px;
-    margin-bottom: 48px;
+    /* max-width: 496px; */
+    max-width: 320px;
+    /* margin-bottom: 48px; */
+    margin-bottom: 72px;
+        text-transform: capitalize;
 }
 
 .hero-btn {
@@ -312,7 +319,7 @@ ul{
 
 /**--------PRODUCTS-----------*/
 .products {
-    /* padding-top: 120px; */
+    display: none;
     padding-bottom: 120px;
 }
 
@@ -497,7 +504,8 @@ ul{
 /**-----------------FOOTER----------------*/
 .footer {
     background-color: #2E2F42;
-    padding: 96px 0;
+    /* padding: 96px 0; */
+
 }
 
 .footer-container{
@@ -887,7 +895,7 @@ ul{
     background-color: var(--iris, #4D5AE5);
     border: none;
     padding: 0;
-    margin-top: 16px
+    /* margin-top: 16px */
 }
 
 .icon-form{
