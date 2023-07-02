@@ -139,7 +139,7 @@ ul{
     width: 100vw;
     height: 100vh;
     background-color: #FFF;
-    padding: 80px 35px 40px 40px;
+    padding: 80px 0 40px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -148,8 +148,17 @@ ul{
     transition: transform 250ms ease-in-out;
 }
 
+.mob-menu.is-open {
+    transform: translateX(0%);
+}
+
 .mob-close-btn {
-    display: block;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
     margin-left: auto;
     color: #fff;
     background-color: transparent;
@@ -157,7 +166,9 @@ ul{
     border-radius: 24px;
     top: 24px;
     right: 24px;
+    padding: 0;
     margin-bottom: 32px;
+    transition: background-color 250ms var(--cubic-bezier), border 250ms var(--cubic-bezier);
 }
 
 .mob-close {}
@@ -165,6 +176,10 @@ ul{
 .mob-list {
     
 } 
+
+.mob-menu .mobile-active{
+    color: #404BBF;
+}
 
 .mob-item:not(:last-child){
     margin-bottom: 40px;
