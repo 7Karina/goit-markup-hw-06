@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/media.css"/>
 </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-container">
         <nav class="header-navigation">
             <a href="./index.html" class="header-logo link">Web<span class="header-logo-raleway link">Studio</span></a>
@@ -38,14 +38,66 @@
             <li class="header-menu-contact"><a class="header-contacts-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>  
         </address>
+        <button type="button" class="gamburger js-open-menu" aria-controls="mobile-menu">
+            <svg class="gamburger-btn" width="32" height="22">
+                <use href="./images/icons.svg#icon-menu-hamburger">
+                </use>
+            </svg>
+        </button>
         </div>
-        </header> -->
+        <div class="mob-menu js-menu-container" aria-controls="mobile-menu">
+        <button type="button" class="mob-close-btn js-close-menu">
+            <svg class="mob-close" width="8" height="8"> 
+            <use href="./images/icons.svg#icon-close-black"></use></svg>
+        </button>
+        <nav class="mob-navigation">
+        <ul class="mob-list list">
+            <li class="mob-item"><a class="mob-menu-link link current" href="./index.html">Studio</a></li>
+            <li class="mob-item"><a class="mob-menu-link link" href="./portfolio.html">Portfolio</a></li>
+            <li class="mob-item"><a class="mob-menu-link link" href="">Contacts</a></li>
+        </ul>
+        </nav>
+        <div class="mobile-cont">
+            <address class="mob-address">
+        <ul class="mob-contacts list">
+            <li class="menu-mob"><a class="mob-tel-link link" href="tel:+110001111111">+11 (000)
+                    111-11-11</a></li>
+            <li class="menu-mob"><a class="mob-contacts-link link" 
+                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        </address>
+        <ul class="mob-icons-list list">
+            <li class="mob-icon-item">
+                <a class="mob-svg link" href="#"><svg class="mob-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg></a>
+            </li>
+            <li class="mob-icon-item">
+                <a class="mob-svg link" href="#"><svg class="mob-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg></a>
+            </li>
+            <li class="mob-icon-item">
+                <a class="mob-svg link" href="#"><svg class="mob-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg></a>
+            </li>
+            <li class="mob-icon-item">
+                <a class="mob-svg link" href="#"><svg class="mob-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg></a>
+            </li>
+        </ul>
+        </div>
+        </div>
+        </header>
 
         <main>
         <section class="hero">
         <div class="container hero-container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button type="button" class="hero-btn" data-modal-open>Order Service</button>
+
         </div>
         </section>
 
@@ -108,13 +160,16 @@
             <div class="container">
             <h2 class="products-title">What are we doing</h2>
             <ul class="products-list list">
-                <li class="products-item"><img src="./images/img_pk.jpg" alt="Desctop app img" width="360">
+                <li class="products-item"><img srcset="./images/pk-2x.jpg 2x"
+                    src="./images/img_pk.jpg" alt="Desctop app img" width="360">
                 </li>
                 <li class="products-item">
-                <img src="./images/img_smart.jpg" alt="Messenger img" width="360">
+                <img srcset="./images/smart-2x.jpg 2x"
+                src="./images/img_smart.jpg" alt="Messenger img" width="360">
                 </li>
                 <li class="products-item">
-                <img src="./images/img_tel.jpg" alt="Mobile app img" width="360">
+                <img srcset="./images/tel-2x.jpg 2x"
+                src="./images/img_tel.jpg" alt="Mobile app img" width="360">
                 </li>
                 </ul>
             </div>
@@ -392,5 +447,6 @@
                 </div>
             </div>
             <script src="./js/modal.js"></script>
+            <script src="./js/menu.js"></script>
         </body>
         </html>
