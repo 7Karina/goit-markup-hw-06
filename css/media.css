@@ -2,6 +2,7 @@
     .container {
         max-width: 428px;
     }
+
     .hero-section {
         max-width: 767px;
         height: 436px;
@@ -11,11 +12,9 @@
         gap: 58px;
     }
 
-
     .benefits-item {
         max-width: 396px;
     }
-
 
     .footer-input{
         width: 398px;
@@ -36,11 +35,11 @@
         display: flex;
         gap: 40px;
     }
-    
+
     .header-menu .list {
         list-style: none;
     }
-    
+
     .header-menu-link {
         font-weight: 500;
         font-size: 16px;
@@ -52,20 +51,20 @@
         gap: 40px;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
     .header-menu-link:hover {
         color: #404bbf;
     }
-    
+
     .header-menu-link:focus {
         color: #404bbf;
     }
-    
+
     .current {
         position: relative;
         color: #404bbf;
     }
-    
+
     .current::after {
         content: '';
         position: absolute;
@@ -77,18 +76,18 @@
         display: block;
         width: 100%;
     }
-    
+
     .header-address,
     .header-menu-contact,
     .header-contacts .list {
         font-style: normal;
     }
-    
+
     .header-menu-contact {
         margin-left: auto;
         gap: 11px;
     }
-    
+
     .header-address{
         margin-left: auto;
         font-style: normal;
@@ -98,7 +97,7 @@
         display: block;
         padding: 16px 0;
     }
-    
+
     .header-contacts .list {
         font-family: "Roboto", sans-serif;
         font-style: normal;
@@ -350,6 +349,7 @@
         padding-top: 120px;
         padding-bottom: 120px;
     }
+
     .container-fifth{
         min-width: 1158px;
     }
@@ -371,9 +371,11 @@
         flex-wrap: nowrap;
         gap: unset;
     }
+
     .footer-box{
         margin-right: 120px;
     }
+
     .footer-item-text {
         max-width: 264px;
     }
