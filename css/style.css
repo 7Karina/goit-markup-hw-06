@@ -61,6 +61,7 @@ ul{
 .header-container{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     /* width: 1158px; */
     margin: 0 auto;
     padding: 0 15px;
@@ -75,7 +76,7 @@ ul{
 .header-navigation{
     display: flex;
     align-items: center;
-    margin-right:auto;
+    /* margin-right:auto; */
 }
 
 
@@ -583,7 +584,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px 32px;
+    /* padding: 16px 32px; */
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -600,15 +601,14 @@ ul{
 /**-----------------FOOTER----------------*/
 .footer {
     background-color: #2E2F42;
-    /* padding: 96px 0; */
-
+    padding: 96px 0;
 }
 
 .footer-container{
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
-    padding: 96px 15px;
+    /* padding: 96px 15px; */
     justify-content: center;
 }
 
@@ -810,7 +810,7 @@ ul{
         font-style: normal;
     }
     
-    .header-menu-contact:not(last-child) {
+    .header-menu-contact:not(:last-child) {
         margin-bottom: 11px;
     }
     
@@ -937,7 +937,7 @@ ul{
     width: 100vw;
     height: 100vh;
     background-color: #FFF;
-    padding: 80px 0 40px 40px;
+    padding: 80px 35px 40px 40px;
     display: flex;
     flex-direction: column;
     pointer-events: none;
@@ -978,6 +978,7 @@ ul{
 
 .mob-list {}
 
+
 .mob-menu .mobile-active {
     color: #404BBF;
 }
@@ -1016,8 +1017,8 @@ ul{
     font-family: Roboto;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.72px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
 }
 
 .mob-contacts-link {
@@ -1300,7 +1301,7 @@ ul{
     letter-spacing: 0.02em;
     color: #F4F4FD;
     width: 268px;
-    margin-top: 16px;
+    /* margin-top: 16px; */
 }
 
 .footer-contacts {
@@ -1484,8 +1485,8 @@ ul{
 .modal{
     width: 95%;
     max-width: 392px;
-    height: 95%;
-    max-height: 584px;
+    /* height: 95%; */
+    min-height: 584px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1673,7 +1674,7 @@ ul{
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5; 
-    letter-spacing: 0.64px;
+    letter-spacing: 0.04em;
     color: var(--white, #FFF);
     padding: 16px 32px;
     margin: 24px auto;
