@@ -186,9 +186,9 @@
         gap: 64px 24px;
     }
 
-    .team-item{
+    /* .team-item{
         width: calc((100% - 24px) / 2);
-    }
+    } */
 
     .container-fifth{
         max-width: 584px;
@@ -240,10 +240,10 @@
 
 
 @media screen and (min-width: 1158px) {
-.container {
-        max-width: 1158px;
-        padding: 0 15px;
-    }
+.container { 
+    max-width: 1158px;
+    padding: 0 15px;
+}
 
 .header-menu-item{
     font-size: 16px;
