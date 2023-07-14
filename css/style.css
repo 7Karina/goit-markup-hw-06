@@ -743,6 +743,12 @@ ul{
     color: #404bbf;
 }
 
+@media screen and (max-width: 768px){
+    .header-menu-contact:not(:last-child) {
+            margin-bottom: 11px;
+        }
+}
+
 @media screen and (min-width: 768px){
     .container{
         max-width: 768px;
@@ -810,9 +816,9 @@ ul{
         font-style: normal;
     }
     
-    .header-menu-contact:not(:last-child) {
+    /* .header-menu-contact:not(:last-child) {
         margin-bottom: 11px;
-    }
+    } */
     
     .header-address {
         margin-left: auto;
@@ -821,7 +827,7 @@ ul{
     
     .header-contacts {
         display: block;
-        padding: 16px 0;
+        /* padding: 16px 0; */
     }
     
     .header-contacts .list {
@@ -1261,7 +1267,7 @@ ul{
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
-    padding: 96px 15px;
+    /* padding: 96px 15px; */
     justify-content: center;
 }
 
