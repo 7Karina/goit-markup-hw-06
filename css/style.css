@@ -1085,6 +1085,7 @@ ul{
     gap: 24px;
     margin-bottom: 72px; */
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     gap: 24px;
     margin-bottom: 48px;;
@@ -1399,11 +1400,11 @@ ul{
 
 @media screen and (min-width: 768px){
     .footer {
-            padding: 0;
+            padding: 96px 0;
         }
     
         .footer-container {
-            gap: 72px 24px;
+            /* gap: 72px 24px; */
         }
     
         .footer-box,
